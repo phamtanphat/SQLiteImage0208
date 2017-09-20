@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.ptp.phamtanphat.sqliteimage0208.ThemAcitivity">
+
+    <TextView
+        android:id="@+id/textviewtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="THEM THU CUNG "
+        android:textColor="#be5315"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittextten"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewtitle"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="Nhap ten con vat" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imagebuttoncamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edittextten"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/camera" />
+
+    <ImageButton
+        android:background="@null"
+        android:id="@+id/imagebuttonfolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edittextten"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/folder" />
+
+    <ImageView
+        android:id="@+id/imageviewshow"
+        android:layout_width="250dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/imagebuttoncamera"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/noimage" />
+
+    <Button
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/buttonhuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageviewshow"
+        android:text="Huy"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+
+    <Button
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/buttonthem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageviewshow"
+        android:text="Them"
+        android:textAllCaps="false"
+        android:textSize="25sp" />
+</RelativeLayout>
